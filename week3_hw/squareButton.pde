@@ -1,15 +1,11 @@
 class squareButton {
-  PVector pos;
-  int size = 50;
-  
-  squareButton(){
-    pos = new PVector(width/4*3,height/2);
-  }
-  
-  void display(){
+  float pos = 600;
+  int size = 100;
+
+  void display() {
     fill(200);
-    noStroke();
+    stroke(0);
     rectMode(CENTER);
-    rect(pos.x, pos.y, size, size);
+    rect(pos, pos, size, size);
   }
 }

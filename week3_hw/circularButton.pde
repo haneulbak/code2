@@ -1,14 +1,26 @@
 class circularButton {
-  PVector pos;
-  int size = 50;
-  
-  circularButton(){
-    pos = new PVector(width/4,height/2);
-  }
-  
-  void display(){
+  float pos = 200;
+  int size = 100;
+  color CC;
+  float d;
+
+  void display() {
     fill(200);
     noStroke();
-    ellipse(pos.x, pos.y, size, size);
+    ellipse(pos, pos, size, size);
+    fill(CC);
+    stroke(255);
+    ellipse(pos+100, pos+100, size, size);
+  }
+
+  void action() {
+
+    if (d<size/2 && mousePressed) {
+      CC=255;
+    } else {
+      CC=0;
+    }
+
+    d = (int(dist(pos, pos, mouseX, mouseY)));
   }
 }

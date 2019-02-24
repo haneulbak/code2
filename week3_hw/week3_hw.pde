@@ -1,6 +1,6 @@
-//10 points: Make a circular button
-//10 points: Make a square button
-//30 points each: Create a class for your circular button and another for your square button OR
+//10 points: Make a circular button (V)
+//10 points: Make a square button (v)
+//30 points each: Create a class for your circular button and another for your square button (v)(v)OR
 //80 points: Make one class that has the option for circular or square buttons in its constructor statement
 //30 points: Have a button that's inactive until you press another button
 //50 points: Have a button that launches some fireworks
@@ -15,9 +15,12 @@ squareButton button2;
 void setup(){
   size(800, 800);
   background(0);
+  button1 = new circularButton();
+  button2 = new squareButton();
 }
 
 void draw(){
   button1.display();
   button2.display();
+  button1.action();
 }
