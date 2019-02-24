@@ -22,5 +22,6 @@ void setup(){
 void draw(){
   button1.display();
   button2.display();
-  button1.action();
+  button1.mouseClicked();
+  button1.mousePressed();
 }
