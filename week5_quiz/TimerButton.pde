@@ -19,7 +19,7 @@ class TimerButton {
   }
 
   void display() {
-    stroke(255);s
+    stroke(255);
     rectMode(CENTER);
     fill(normal);
     rect(buttonX, buttonY, buttonSize, buttonSize);
