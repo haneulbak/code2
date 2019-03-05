@@ -30,9 +30,9 @@ class TimerButton {
     rect(buttonX-200, buttonY-150, buttonSize, buttonSize);
   }
 
-  void colorChange() {
-    
-  boolean overButton(
+  // void colorChange() {
+
+  Boolean overButton() {
     if (mouseX >= buttonX && mouseX <= buttonX+width &&
       mouseX >= buttonY && mouseY <= buttonY+height &&
       mouseX >= buttonX+200 && mouseX <= buttonX+200+width &&

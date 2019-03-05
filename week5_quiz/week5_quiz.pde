@@ -10,5 +10,5 @@ void setup() {
 
 void draw(){
   buttons.display();
-  buttons.colorChange();
+  buttons.overButton();
 }
