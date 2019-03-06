@@ -35,9 +35,9 @@ class Ball {
   void play() {
     if (mousePressed == true) {
       position.x = pmouseX;
-      speed.x = speed.x + 0.1;
+      speed.x = speed.x + random(0.1,0.5);
       position.y = pmouseY;
-      speed.y = speed.y + 0.1;
+      speed.y = speed.y + random(0.1,0.5);
     }
   }
 }
