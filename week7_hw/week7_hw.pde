@@ -79,7 +79,6 @@ void setup() {
 
 void draw() {
   background(255);
-  frame = frame++;
 
   switch(STATE) {
   case 0:
